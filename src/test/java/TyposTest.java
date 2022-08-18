@@ -8,9 +8,8 @@ public class TyposTest extends BaseTest {
     @Test
     public void typos() {
         driver.get("http://the-internet.herokuapp.com/typos");
-        WebElement element = driver.findElement(By.tagName("p"));
+        WebElement element = driver.findElements(By.tagName("p")).get(1);
         String val = element.getAttribute("innerText");
-        assertEquals(val, "This example demonstrates a typo being introduced. It does it randomly on each" +
-                        " page load. Sometimes you'll see a typo, other times you won,t.", "Not the same");
+        assertEquals(val, "Sometimes you'll see a typo, other times you won,t.", "Not the same");
     }
 }
