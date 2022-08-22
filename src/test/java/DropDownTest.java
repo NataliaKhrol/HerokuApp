@@ -22,8 +22,7 @@ public class DropDownTest extends BaseTest {
         driver.get("http://the-internet.herokuapp.com/dropdown");
         WebElement element = driver.findElement(By.id("dropdown"));
         Select dropDown = new Select(element);
-        // Select s = new Select(driver.findElement(By.xpath("//select[@name=’selType’]")));
-        // getting the list of options in the dropdown with getOptions()
+        // проверить наличие всех элементов дроп-дауна
         List<WebElement> op = dropDown.getOptions();
         int size = op.size();
         for (int i = 0; i < size; i++) {
