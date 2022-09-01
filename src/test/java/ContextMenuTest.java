@@ -26,8 +26,3 @@ public class ContextMenuTest extends BaseTest {
         alert.accept();
     }
 }
-   /* boolean checkbox = driver.findElement(By.cssSelector("[type=checkbox]")).is();
-    assertTrue(checkbox, "Something went wrong");
-    //<p id="message">It's disabled!</p>
-        driver.findElement(By.cssSelector("[disabled='']"));*/
-//*[@id="message"]
